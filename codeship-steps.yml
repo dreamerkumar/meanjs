@@ -1,4 +1,5 @@
 - type: serial
-    steps:
-      - service: mymongodb
-      - service: web
+  name: 01
+  steps:
+  - service: mymongodb
+  - service: web
