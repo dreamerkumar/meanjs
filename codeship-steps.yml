@@ -5,10 +5,4 @@
   name: web
   steps:
   - service: web
-    command: bash -c 
-    command: cd Development 
-    command: git clone https://github.com/dreamerkumar/meanjs.git 
-    command: cd meanjs 
-    command: npm install
-    command: grunt build
     command: ls
