@@ -11,4 +11,4 @@
     command: cd meanjs 
     command: npm install
     command: grunt build
-    command: grunt test
+    command: ls
