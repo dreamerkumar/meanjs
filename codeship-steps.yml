@@ -5,3 +5,4 @@
   name: web
   steps:
   - service: web
+    command: grunt test
