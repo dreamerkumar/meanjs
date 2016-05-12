@@ -1,0 +1,10 @@
+web:
+   image: maccam912/meanjs
+   links:
+    - mymongodb:db_1
+   ports:
+    - "3000:3000"
+   command: bash -c "cd Development && git clone https://github.com/dreamerkumar/meanjs.git && cd meanjs && npm install && bower install --allow-root && grunt build && NODE_ENV=production grunt"
+mymongodb:
+    image: mongo
+
