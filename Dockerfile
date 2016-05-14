@@ -33,6 +33,6 @@ RUN echo "Navigating to the meanjs directory"
 RUN cd meanjs
 RUN echo "Running npm install"
 RUN npm install
-RUN echo "Running grunt build"
+RUN echo "Running grunt build" 
 RUN grunt build
 RUN NODE_ENV=production grunt
