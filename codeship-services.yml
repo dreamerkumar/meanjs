@@ -1,5 +1,5 @@
 web:
-   image: maccam912/meanjs
+   image: dreamerkumar/meanjs:latest
    links:
     - mymongodb:db_1
    ports:
