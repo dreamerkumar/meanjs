@@ -1,15 +1,9 @@
-mymongodb:
-    image: mongo
-    ports: 
-    - "27017:27017"
 web:
    image: maccam912/meanjs
    links:
-   - mymongodb:db_1
+    - mymongodb:db_1
    ports:
-   - "3000:3000"
-   environment: 
-   - "NODE_ENV:development"
-   command: bash -c "./get_latest_and_build.sh && grunt"
-
-
+    - "3000:3000"
+   command: bash -c "cd Development && git clone https://github.com/dreamerkumar/meanjs.git && cd meanjs && chmod 777 ./build_source_files.sh && ./build_source_files.sh"
+mymongodb:
+    image: mongo
