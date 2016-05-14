@@ -6,3 +6,6 @@ web:
     - "3000:3000"
 mymongodb:
     image: mongo
+deploy:
+    image: defermat/machine:latest
+    privileged: true
