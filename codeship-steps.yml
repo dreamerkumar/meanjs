@@ -5,4 +5,4 @@
   name: web
   steps:
   - service: web
-    command: bash -c "mongod && cd Development/meanjs && NODE_ENV=test grunt test"
+    command: bash -c "mongod --fork --logpath /var/log/mongodb.log && cd Development/meanjs && NODE_ENV=test grunt test"
