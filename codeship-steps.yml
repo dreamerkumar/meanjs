@@ -5,4 +5,4 @@
   name: web
   steps:
   - service: web
-  command: bash -c "cd Development && git clone https://github.com/dreamerkumar/meanjs.git && cd meanjs && chmod 777 ./build_source_files.sh && ./build_source_files.sh"
+    command: bash -c "cd Development && git clone https://github.com/dreamerkumar/meanjs.git && cd meanjs && chmod 777 ./build_source_files.sh && ./build_source_files.sh"
