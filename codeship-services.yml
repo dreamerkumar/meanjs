@@ -7,5 +7,4 @@ web:
 mymongodb:
     image: mongo
 deploy:
-    image: defermat/machine:latest
-    privileged: true
+    image: dreamerkumar/docker-wordpress-nginx-ssh

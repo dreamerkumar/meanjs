@@ -8,4 +8,4 @@
     command: bash -c "mongod --fork --logpath /var/log/mongodb.log && cd Development/meanjs && NODE_ENV=test grunt test"
   name: deploy
   - service: deploy
-    command: bash -c "docker-machine create --driver amazonec2 --amazonec2-access-key AKIAIWEKTLCEGD64Q6GA --amazonec2-secret-key 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 --amazonec2-vpc-id vpc-65042e004 --amazonec2-zone c aws07 && docker run --name mymongodb -d mongo && docker run -i -t --name mymeanjs --link mymongodb:db_1 -p 80:3000 dreamerkumar/meanjs:latest bash && NODE_ENV=production grunt"
+    command: bash -c "./update_meanjs_container_on_aws.sh"
