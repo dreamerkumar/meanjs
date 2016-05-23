@@ -6,4 +6,4 @@
   command: bash -c "mongod --fork --logpath /var/log/mongodb.log && cd Development/meanjs && NODE_ENV=test grunt test"
 - name: deploy
   service: deploy
-  command: bash -c "./update_meanjs_container_on_aws.sh"
+  command: ./update_meanjs_container_on_aws.sh
