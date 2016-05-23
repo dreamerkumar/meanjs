@@ -1,11 +1,8 @@
-- type: serial
-  name: mymongodb
-  steps:
-  - service: mymongodb
-  name: web
-  steps:
-  - service: web
-    command: bash -c "mongod --fork --logpath /var/log/mongodb.log && cd Development/meanjs && NODE_ENV=test grunt test"
-  name: deploy
-  - service: deploy
-    command: bash -c "./update_meanjs_container_on_aws.sh"
+- name: mymongodb
+  service: mymongodb
+- name: web
+  service: web
+  command: bash -c "mongod --fork --logpath /var/log/mongodb.log && cd Development/meanjs && NODE_ENV=test grunt test"
+- name: deploy
+  service: deploy
+  command: bash -c "./update_meanjs_container_on_aws.sh"
