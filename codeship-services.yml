@@ -7,4 +7,4 @@ web:
 mymongodb:
     image: mongo
 deploy:
-    image: dreamerkumar/docker-wordpress-nginx-ssh
+    image: dreamerkumar/docker-wordpress-nginx-ssh:latest
