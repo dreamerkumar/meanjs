@@ -1,10 +1,4 @@
 web:
    image: dreamerkumar/meanjs:latest
-   links:
-    - mymongodb:db_1
-   ports:
-    - "3000:3000"
-mymongodb:
-    image: mongo
 deploy:
     image: dreamerkumar/docker-wordpress-nginx-ssh:latest
